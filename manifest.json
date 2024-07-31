@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "Redditrect",
+  "version": "1.0",
+
+  "description": "Redirects reddit to old.reddit",
+
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "*://*.reddit.com/*"
+  ],
+
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  }
+}
