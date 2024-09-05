@@ -28,5 +28,11 @@
   "icons": {
     "48": "icons/redditrect-48.png",
     "96": "icons/redditrect-96.png"
+  },
+
+  "browser_specific_settings": {
+    "gecko": {
+      "update_url": "https://github.com/TV-T/Redditrect/blob/master/updates.json"
+    }
   }
 }

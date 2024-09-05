@@ -1,0 +1,12 @@
+{
+  "addons": {
+    "{5301b2b5-0f6c-43f5-ae5a-f48af3033abd}": {
+      "updates": [
+        {
+          "version": "1.0",
+          "update_link": "https://github.com/TV-T/Redditrect/releases/download/v1.0/a43ac0296b714193aee3-1.0.xpi"
+        }
+      ]
+    }
+  }
+}
