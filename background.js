@@ -19,10 +19,14 @@ const getIcon = (enabled) => {
 
 browser.webRequest.onBeforeRequest.addListener(
   (details) => {
-    if (!enabled) return details.url;
+    if (!enabled) return;
 
     const url = new URL(details.url);
-    if (url.hostname.includes('reddit.com') && !url.hostname.includes('old.reddit.com')) {
+    const isRedditUrl = url.hostname.includes('reddit.com');
+    const isOldRedditUrl = url.hostname.includes('old.reddit.com');
+    const isGallery = url.pathname.includes('/gallery/');
+
+    if (isRedditUrl && !isOldRedditUrl && !isGallery) {
       const oldRedditUrl = new URL(`https://old.reddit.com${url.pathname}`);
       return { redirectUrl: oldRedditUrl.toString() };
     }
