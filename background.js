@@ -25,8 +25,9 @@ browser.webRequest.onBeforeRequest.addListener(
     const isRedditUrl = url.hostname.includes('reddit.com');
     const isOldRedditUrl = url.hostname.includes('old.reddit.com');
     const isGallery = url.pathname.includes('/gallery/');
+    const isMedia = url.pathname.includes('/media/');
 
-    if (isRedditUrl && !isOldRedditUrl && !isGallery) {
+    if (isRedditUrl && !isOldRedditUrl && !isGallery && !isMedia) {
       const oldRedditUrl = new URL(`https://old.reddit.com${url.pathname}`);
       return { redirectUrl: oldRedditUrl.toString() };
     }
