@@ -17,6 +17,10 @@
         {
           "version": "4.0",
           "update_link": "https://github.com/TV-T/Redditrect/releases/download/v4.0/a43ac0296b714193aee3-4.0.xpi"
+        },
+        {
+          "version": "5.0",
+          "update_link": "https://github.com/TV-T/Redditrect/releases/download/v5.0/a43ac0296b714193aee3-5.0.xpi"
         }
       ]
     }
